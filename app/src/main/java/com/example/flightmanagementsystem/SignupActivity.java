@@ -86,6 +86,12 @@ public class SignupActivity extends AppCompatActivity {
             values.put("GENDER", gender);
             db.insert("USER", null, values);
             Toast.makeText(this, fullname + " your account has been created.", Toast.LENGTH_LONG).show();
+            fullnametext.setText("");
+            emailtext.setText("");
+            passwordtext.setText("");
+            confirmpasswordtext.setText("");
+            maleradio.setChecked(false);
+            femaleradio.setChecked(false);
         }
     }
 }
