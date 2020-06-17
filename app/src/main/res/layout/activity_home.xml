@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityHome"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/flight"
+        android:adjustViewBounds="true"
+        android:id="@+id/homegif"
+        android:layout_margin="30dp"/>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/homegif"
+        android:layout_marginBottom="10dp">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover FLY-IN. Where culture meets luxury. Whether you prefer to enjoy world-class restaurants, shop in ultra-modern malls with the latest luxury brands or take a stroll down the bustling alleys of traditional souqs, Iraus has something to offer everyone."
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover FLY-IN. Where culture meets luxury. Whether you prefer to enjoy world-class restaurants, shop in ultra-modern malls with the latest luxury brands or take a stroll down the bustling alleys of traditional souqs, Iraus has something to offer everyone."
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover FLY-IN. Where culture meets luxury. Whether you prefer to enjoy world-class restaurants, shop in ultra-modern malls with the latest luxury brands or take a stroll down the bustling alleys of traditional souqs, Iraus has something to offer everyone."
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover FLY-IN. Where culture meets luxury. Whether you prefer to enjoy world-class restaurants, shop in ultra-modern malls with the latest luxury brands or take a stroll down the bustling alleys of traditional souqs, Iraus has something to offer everyone."
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover FLY-IN. Where culture meets luxury. Whether you prefer to enjoy world-class restaurants, shop in ultra-modern malls with the latest luxury brands or take a stroll down the bustling alleys of traditional souqs, Iraus has something to offer everyone."
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover FLY-IN. Where culture meets luxury. Whether you prefer to enjoy world-class restaurants, shop in ultra-modern malls with the latest luxury brands or take a stroll down the bustling alleys of traditional souqs, Iraus has something to offer everyone."
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover FLY-IN. Where culture meets luxury. Whether you prefer to enjoy world-class restaurants, shop in ultra-modern malls with the latest luxury brands or take a stroll down the bustling alleys of traditional souqs, Iraus has something to offer everyone."
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover FLY-IN. Where culture meets luxury. Whether you prefer to enjoy world-class restaurants, shop in ultra-modern malls with the latest luxury brands or take a stroll down the bustling alleys of traditional souqs, Iraus has something to offer everyone."
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+    
+
+
+</RelativeLayout>

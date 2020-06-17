@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">Flight Management System</string>
+    <string name="K_FPW">2</string>
+    <string name="K_D">Monday and Saturday</string>
+    <string name="K_T">09:30AM</string>
+    <string name="K_PEC_OW">8,000</string>
+    <string name="K_PEC_R">15,000</string>
+    <string name="K_EC_OW">10,000</string>
+    <string name="K_EC_R">18,000</string>
+    <string name="K_BC_OW">12,000</string>
+    <string name="K_BC_R">20,000</string>
+    <string name="K_FC_OW">14,000</string>
+    <string name="K_FC_R">23,000</string>
+
+    <string name="P_FPW">1</string>
+    <string name="P_D">Friday</string>
+    <string name="P_T">12:30PM</string>
+    <string name="P_PEC_OW">7,000</string>
+    <string name="P_PEC_R">13,000</string>
+    <string name="P_EC_OW">8,000</string>
+    <string name="P_EC_R">15,000</string>
+    <string name="P_BC_OW">9,000</string>
+    <string name="P_BC_R">18,000</string>
+    <string name="P_FC_OW">11,000</string>
+    <string name="P_FC_R">22,000</string>
+
+    <string name="I_FPW">2</string>
+    <string name="I_D">Thursday and Sunday</string>
+    <string name="I_T">11:30AM</string>
+    <string name="I_PEC_OW">9,000</string>
+    <string name="I_PEC_R">18,000</string>
+    <string name="I_EC_OW">11,000</string>
+    <string name="I_EC_R">20,000</string>
+    <string name="I_BC_OW">13,000</string>
+    <string name="I_BC_R">22,000</string>
+    <string name="I_FC_OW">15,000</string>
+    <string name="I_FC_R">26,000</string>
+
+    <string name="F_FPW">1</string>
+    <string name="F_D">Tuesday</string>
+    <string name="F_T">01:30PM</string>
+    <string name="F_PEC_OW">8,000</string>
+    <string name="F_PEC_R">16,000</string>
+    <string name="F_EC_OW">9,000</string>
+    <string name="F_EC_R">17,000</string>
+    <string name="F_BC_OW">10,000</string>
+    <string name="F_BC_R">19,000</string>
+    <string name="F_FC_OW">11,000</string>
+    <string name="F_FC_R">21,000</string>
+
+    <string name="L_FPW">1</string>
+    <string name="L_D">Wednesday</string>
+    <string name="L_T">10:30AM</string>
+    <string name="L_PEC_OW">7,000</string>
+    <string name="L_PEC_R">14,000</string>
+    <string name="L_EC_OW">8,000</string>
+    <string name="L_EC_R">16,000</string>
+    <string name="L_BC_OW">9,000</string>
+    <string name="L_BC_R">18,000</string>
+    <string name="L_FC_OW">10,000</string>
+    <string name="L_FC_R">20,000</string>
+
+    <string name="ISA_FPW">1</string>
+    <string name="ISA_D">Wednesday</string>
+    <string name="ISA_T">06:30AM</string>
+    <string name="ISA_PEC_OW">30,000</string>
+    <string name="ISA_PEC_R">55,000</string>
+    <string name="ISA_EC_OW">31,000</string>
+    <string name="ISA_EC_R">57,000</string>
+    <string name="ISA_BC_OW">33,000</string>
+    <string name="ISA_BC_R">60,000</string>
+    <string name="ISA_FC_OW">35,000</string>
+    <string name="ISA_FC_R">65,000</string>
+
+    <string name="IA_FPW">1</string>
+    <string name="IA_D">Tuesday</string>
+    <string name="IA_T">08:30AM</string>
+    <string name="IA_PEC_OW">33,000</string>
+    <string name="IA_PEC_R">63,000</string>
+    <string name="IA_EC_OW">35,000</string>
+    <string name="IA_EC_R">66,000</string>
+    <string name="IA_BC_OW">38,000</string>
+    <string name="IA_BC_R">70,000</string>
+    <string name="IA_FC_OW">40,000</string>
+    <string name="IA_FC_R">75,000</string>
+
+    <string name="IL_FPW">1</string>
+    <string name="IL_D">Thursday</string>
+    <string name="IL_T">02:30PM</string>
+    <string name="IL_PEC_OW">33,000</string>
+    <string name="IL_PEC_R">63,000</string>
+    <string name="IL_EC_OW">35,000</string>
+    <string name="IL_EC_R">66,000</string>
+    <string name="IL_BC_OW">38,000</string>
+    <string name="IL_BC_R">70,000</string>
+    <string name="IL_FC_OW">40,000</string>
+    <string name="IL_FC_R">75,000</string>
+
+    <string name="IC_FPW">1</string>
+    <string name="IC_D">Friday</string>
+    <string name="IC_T">03:30PM</string>
+    <string name="IC_PEC_OW">25,000</string>
+    <string name="IC_PEC_R">45,000</string>
+    <string name="IC_EC_OW">26,000</string>
+    <string name="IC_EC_R">46,000</string>
+    <string name="IC_BC_OW">28,000</string>
+    <string name="IC_BC_R">48,000</string>
+    <string name="IC_FC_OW">30,000</string>
+    <string name="IC_FC_R">55,000</string>
+
+    <string name="ID_FPW">1</string>
+    <string name="ID_D">Monday</string>
+    <string name="ID_T">07:30AM</string>
+    <string name="ID_PEC_OW">30,000</string>
+    <string name="ID_PEC_R">55,000</string>
+    <string name="ID_EC_OW">31,000</string>
+    <string name="ID_EC_R">58,000</string>
+    <string name="ID_BC_OW">34,000</string>
+    <string name="ID_BC_R">62,000</string>
+    <string name="ID_FC_OW">35,000</string>
+    <string name="ID_FC_R">68,000</string>
+
+    <string-array name="orign">
+        <item>Faisalabad</item>
+        <item>Islamabad</item>
+        <item>Karachi</item>
+        <item>Lahore</item>
+        <item>Peshawar</item>
+    </string-array>
+
+    <string-array name="cabinclass">
+        <item>Premium Economy Class</item>
+        <item>Economy Class</item>
+        <item>Business Class</item>
+        <item>First Class</item>
+    </string-array>
+
+    <string-array name="L_destination">
+        <item>Faisalabad</item>
+        <item>Islamabad</item>
+        <item>Karachi</item>
+        <item>Lahore</item>
+        <item>Peshawar</item>
+    </string-array>
+
+    <string-array name="I_destination">
+        <item>America</item>
+        <item>China</item>
+        <item>Dubai</item>
+        <item>London</item>
+        <item>Saudi Arabia</item>
+    </string-array>
+</resources>
