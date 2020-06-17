@@ -22,6 +22,7 @@
         android:focusableInTouchMode="true">
 
         <EditText
+            android:id="@+id/edittext_L_email"
             android:layout_width="match_parent"
             android:layout_height="42dp"
             android:ems="10"
@@ -39,6 +40,7 @@
         app:passwordToggleEnabled="true">
 
         <EditText
+            android:id="@+id/edittext_L_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -52,10 +54,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="@drawable/button_rounded"
-        android:onClick="GoToDashBoard"
+        android:onClick="LoginUser"
         android:text="Login"
         android:textColor="#FFFFFF"
-        android:textSize="22sp" />
+        android:textSize="22sp"/>
 
     <Button
         android:layout_width="match_parent"

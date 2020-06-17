@@ -5,13 +5,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    int User_ID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent data= getIntent();
+        User_ID=data.getIntExtra("userid",0);
+        Toast.makeText(this,"hey user "+User_ID,Toast.LENGTH_LONG).show();
     }
 
     public void GoToHome(View v){
@@ -27,8 +33,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void GoToBooking(View v){
-        Intent bookingactivity =new Intent();
-        bookingactivity.setClass(this, BookingActivity.class);
-        startActivity(bookingactivity);
+        Intent booking =new Intent();
+        booking.setClass(this, BookingActivity.class);
+        booking.putExtra("userid",User_ID);
+        startActivity(booking);
     }
 }

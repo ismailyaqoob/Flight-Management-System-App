@@ -2,6 +2,7 @@ package com.example.flightmanagementsystem;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class BookingActivity extends AppCompatActivity {
 
@@ -16,10 +18,16 @@ public class BookingActivity extends AppCompatActivity {
     AutoCompleteTextView origin, destination, cabinclass;
     RadioGroup destinationradio;
 
+    int User_ID;
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking);
+
+        Intent data=getIntent();
+        User_ID=data.getIntExtra("userid",0);
+        Toast.makeText(this,"hey user "+User_ID,Toast.LENGTH_LONG).show();
 
         //initializing Views
         origin = (AutoCompleteTextView) findViewById(R.id.autoComplete_origin);
