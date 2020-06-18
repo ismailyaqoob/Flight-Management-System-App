@@ -22,8 +22,8 @@ public class Database extends SQLiteOpenHelper {
                 "PASSWORD TEXT NOT NULL," +
                 "GENDER TEXT NOT NULL)");
 
-        db.execSQL("CREATE TABLE TICKECTDETAIL(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "TICKETNUMBER TEXT NOT NULL," +
+        db.execSQL("CREATE TABLE TICKETDETAIL(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "TICKETNUMBER TEXT UNIQUE," +
                 "FULLNAME TEXT NOT NULL," +
                 "ADDRESS TEXT NOT NULL," +
                 "MOBILENUMBER TEXT NOT NULL," +
@@ -32,7 +32,7 @@ public class Database extends SQLiteOpenHelper {
                 "ORIGIN TEXT NOT NULL," +
                 "DESTINATION TEXT NOT NULL," +
                 "CABINCLASS TEXT NOT NULL," +
-                "TICKETTYPE TEXT UNIQUE," +
+                "TICKETTYPE TEXT NOT NULL," +
                 "USERID INTEGER NOT NULL," +
                 "FOREIGN KEY(USERID) REFERENCES USER(_id))");
     }
