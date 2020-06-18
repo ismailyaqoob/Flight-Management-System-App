@@ -28,6 +28,7 @@
             android:focusableInTouchMode="true">
 
             <EditText
+                android:id="@+id/edittext_B_fullname"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:ems="10"
@@ -44,6 +45,7 @@
             android:focusableInTouchMode="true">
 
             <EditText
+                android:id="@+id/edittext_B_address"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:ems="10"
@@ -60,6 +62,7 @@
             android:focusableInTouchMode="true">
 
             <EditText
+                android:id="@+id/edittext_B_mobilenumber"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:ems="10"
@@ -77,6 +80,7 @@
             android:focusableInTouchMode="true">
 
             <EditText
+                android:id="@+id/edittext_B_NICnumber"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:ems="10"
@@ -94,6 +98,7 @@
             android:focusableInTouchMode="true">
 
             <EditText
+                android:id="@+id/edittext_B_passportnumber"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:ems="10"
@@ -164,11 +169,28 @@
             android:focusableInTouchMode="true">
 
             <AutoCompleteTextView
-                android:id="@+id/autoComplete_destination"
+                android:id="@+id/autoComplete_Ldestination"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:hint="Destination"
+                android:hint="Destination (Local)"
+                android:enabled="false"
+                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoComplete_Idestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="Destination (International)"
                 android:enabled="false"
                 style="@style/Widget.AppCompat.Spinner.Underlined"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -196,6 +218,7 @@
 
 
             <RadioButton
+                android:id="@+id/radiobutton_oneway"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -203,6 +226,7 @@
                 android:textSize="20sp" />
 
             <RadioButton
+                android:id="@+id/radiobutton_return"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -217,7 +241,8 @@
             android:background="@drawable/button_rounded"
             android:text="Book Ticket"
             android:textColor="#FFFFFF"
-            android:textSize="22sp" />
+            android:textSize="22sp"
+            android:onClick="BookTicket"/>
 
     </LinearLayout>
 </ScrollView>

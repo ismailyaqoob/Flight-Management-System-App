@@ -32,7 +32,7 @@ public class Database extends SQLiteOpenHelper {
                 "ORIGIN TEXT NOT NULL," +
                 "DESTINATION TEXT NOT NULL," +
                 "CABINCLASS TEXT NOT NULL," +
-                "TICKETTYPE TEXT NOT NULL," +
+                "TICKETTYPE TEXT UNIQUE," +
                 "USERID INTEGER NOT NULL," +
                 "FOREIGN KEY(USERID) REFERENCES USER(_id))");
     }
