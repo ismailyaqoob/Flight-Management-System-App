@@ -35,7 +35,8 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
-            android:onClick="GoToHome">
+            android:onClick="GoToHome"
+            app:cardBackgroundColor="@color/Background">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -70,7 +71,8 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
-            android:onClick="GoToEnquiry">
+            android:onClick="GoToEnquiry"
+            app:cardBackgroundColor="@color/Background">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -105,7 +107,8 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
-            android:onClick="GoToBooking">
+            android:onClick="GoToBooking"
+            app:cardBackgroundColor="@color/Background">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -139,7 +142,8 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/Background">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -173,7 +177,8 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/Background">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -206,7 +211,8 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/Background">
 
             <LinearLayout
                 android:layout_width="wrap_content"
