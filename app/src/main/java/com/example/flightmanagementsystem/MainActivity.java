@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Intent data= getIntent();
         User_ID=data.getIntExtra("userid",0);
-        Toast.makeText(this,"hey user "+User_ID,Toast.LENGTH_LONG).show();
     }
 
     public void GoToHome(View v){

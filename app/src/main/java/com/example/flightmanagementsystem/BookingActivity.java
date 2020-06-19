@@ -38,7 +38,6 @@ public class BookingActivity extends AppCompatActivity {
 
         Intent data = getIntent();
         User_ID = data.getIntExtra("userid", 0);
-        Toast.makeText(this, "hey user " + User_ID, Toast.LENGTH_LONG).show();
 
         //Initializing Views.
         originauto = (AutoCompleteTextView) findViewById(R.id.autoComplete_origin);
