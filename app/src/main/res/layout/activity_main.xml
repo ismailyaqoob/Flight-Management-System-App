@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:rowCount="3"
         android:columnCount="2"
-        android:layout_margin="20dp">
+        android:layout_margin="20sp">
 
         <androidx.cardview.widget.CardView
 
