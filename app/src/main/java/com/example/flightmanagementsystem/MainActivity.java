@@ -38,4 +38,11 @@ public class MainActivity extends AppCompatActivity {
         booking.putExtra("userid",User_ID);
         startActivity(booking);
     }
+
+    public void GoToViewCancel(View v){
+        Intent viewcancel =new Intent();
+        viewcancel.setClass(this, ViewCancelActivity.class);
+        viewcancel.putExtra("userid",User_ID);
+        startActivity(viewcancel);
+    }
 }
