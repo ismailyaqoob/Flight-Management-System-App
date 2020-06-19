@@ -7,19 +7,9 @@
     tools:context=".MainActivity"
     android:background="@drawable/background">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true"/>
-
-
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/textView"
         android:rowCount="3"
         android:columnCount="2"
         android:layout_margin="20dp">
@@ -75,7 +65,9 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             android:onClick="GoToEnquiry"
-            app:cardBackgroundColor="@color/Background">
+            app:cardBackgroundColor="@color/Background"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -111,7 +103,9 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             android:onClick="GoToBooking"
-            app:cardBackgroundColor="@color/Background">
+            app:cardBackgroundColor="@color/Background"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -147,7 +141,9 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             android:onClick="GoToViewCancel"
-            app:cardBackgroundColor="@color/Background">
+            app:cardBackgroundColor="@color/Background"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -183,7 +179,9 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardBackgroundColor="@color/Background"
-            android:onClick="GoToRating">
+            android:onClick="GoToRating"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -218,7 +216,9 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardBackgroundColor="@color/Background"
-            android:onClick="GoToInfo">
+            android:onClick="GoToInfo"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
                 android:layout_width="wrap_content"
