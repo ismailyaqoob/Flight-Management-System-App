@@ -45,4 +45,16 @@ public class MainActivity extends AppCompatActivity {
         viewcancel.putExtra("userid",User_ID);
         startActivity(viewcancel);
     }
+
+    public void GoToRating(View v){
+        Intent rate =new Intent();
+        rate.setClass(this, RatingActivity.class);
+        startActivity(rate);
+    }
+
+    public void GoToInfo(View v){
+        Intent info =new Intent();
+        info.setClass(this, infoActivity.class);
+        startActivity(info);
+    }
 }

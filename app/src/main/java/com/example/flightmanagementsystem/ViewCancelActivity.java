@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +39,9 @@ public class ViewCancelActivity extends AppCompatActivity {
             RecyclerViewAdapter recyclerViewAdapter=new RecyclerViewAdapter(this,ticketlist);
             viewcancelrecycler.setLayoutManager(new GridLayoutManager(this,1));
             viewcancelrecycler.setAdapter(recyclerViewAdapter);
+        }
+        else{
+            Toast.makeText(this,"You have not book any ticket yet.",Toast.LENGTH_LONG).show();
         }
     }
 }

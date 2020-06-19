@@ -216,6 +216,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket Type: "
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"/>
 
             <RadioButton
                 android:id="@+id/radiobutton_oneway"
@@ -240,6 +246,7 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/button_rounded"
             android:text="Book Ticket"
+            android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:textSize="22sp"
             android:onClick="BookTicket"/>

@@ -2,6 +2,7 @@ package com.example.flightmanagementsystem;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,6 +53,18 @@ holder.ticketdetailcard.setOnClickListener(new View.OnClickListener() {
         ticketdetail.putExtra("tickettype",data.get(position).getTicket_type());
         ticketdetail.setClass(context,TicketDetailActivity.class);
         context.startActivity(ticketdetail);
+    }
+});
+
+holder.deletebutton.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Database helper=new Database(context);
+        SQLiteDatabase db=helper.getReadableDatabase();
+        db.delete("TICKETDETAIL","_id="+data.get(position).getId()+" AND TICKETNUMBER=\'"+data.get(position).getTicket_number()+"\'",null);
+        data.remove(position);
+        notifyItemRemoved(position);
+        notifyItemRangeChanged(position,data.size());
     }
 });
     }
