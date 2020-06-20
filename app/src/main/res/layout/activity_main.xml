@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/background">
+    android:background="@color/Background">
 
     <GridLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             android:onClick="GoToHome"
-            app:cardBackgroundColor="@color/Background"
+            app:cardBackgroundColor="@color/CardBackground"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
@@ -65,7 +65,7 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             android:onClick="GoToEnquiry"
-            app:cardBackgroundColor="@color/Background"
+            app:cardBackgroundColor="@color/CardBackground"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
@@ -103,7 +103,7 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             android:onClick="GoToBooking"
-            app:cardBackgroundColor="@color/Background"
+            app:cardBackgroundColor="@color/CardBackground"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
@@ -141,7 +141,7 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             android:onClick="GoToViewCancel"
-            app:cardBackgroundColor="@color/Background"
+            app:cardBackgroundColor="@color/CardBackground"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
@@ -178,7 +178,7 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
-            app:cardBackgroundColor="@color/Background"
+            app:cardBackgroundColor="@color/CardBackground"
             android:onClick="GoToRating"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
@@ -215,7 +215,7 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
-            app:cardBackgroundColor="@color/Background"
+            app:cardBackgroundColor="@color/CardBackground"
             android:onClick="GoToInfo"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">

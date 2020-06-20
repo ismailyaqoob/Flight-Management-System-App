@@ -150,4 +150,7 @@
         <item>London</item>
         <item>Saudi Arabia</item>
     </string-array>
+
+    <string name="home_paragraph1">Discover AIR_US. Where culture meets luxury. Whether you prefer to enjoy world-class restaurants, shop in ultra-modern malls with the latest luxury brands or take a stroll down the bustling alleys of traditional souqs, Iraus has something to offer everyone.</string>
+    <string name="home_paragraph2">Integer tincidunt, tortor eget vehicula vulputate, ligula turpis malesuada dui, id tempor ipsum magna vitae mi. Morbi aliquam nibh lobortis lectus finibus, et euismod sapien ullamcorper. Quisque interdum sapien a elit porta, quis posuere elit commodo. Vestibulum nec sapien eget dolor scelerisque bibendum. Phasellus at egestas dolor. Proin luctus eget metus ut lobortis. Duis porttitor magna sit amet elementum eleifend. Morbi lacinia viverra feugiat.</string>
 </resources>

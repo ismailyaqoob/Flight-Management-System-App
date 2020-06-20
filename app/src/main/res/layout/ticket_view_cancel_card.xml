@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="70dp"
     android:layout_margin="8dp"
-    android:background="@color/Background"
+    andtoid:cardBackgroundColor="@color/CardBackground"
     andtoid:cardCornerRadius="8dp"
     andtoid:cardElevation="8dp"
     android:id="@+id/cardview_VC_ticketdetail"

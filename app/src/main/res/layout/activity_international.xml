@@ -5,23 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InternationalActivity"
-    android:background="@drawable/background">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true"/>
+    android:background="@color/Background">
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/textView"
         android:rowCount="5"
         android:columnCount="1"
-        android:layout_margin="20dp">
+        android:layout_margin="20sp">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_america"
@@ -36,7 +27,7 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             android:onClick="GoToInternationalFlightDetail"
-            app:cardBackgroundColor="@color/Background"
+            app:cardBackgroundColor="@color/CardBackground"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
@@ -71,7 +62,7 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             android:onClick="GoToInternationalFlightDetail"
-            app:cardBackgroundColor="@color/Background"
+            app:cardBackgroundColor="@color/CardBackground"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
@@ -106,7 +97,7 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             android:onClick="GoToInternationalFlightDetail"
-            app:cardBackgroundColor="@color/Background"
+            app:cardBackgroundColor="@color/CardBackground"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
@@ -141,7 +132,7 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             android:onClick="GoToInternationalFlightDetail"
-            app:cardBackgroundColor="@color/Background"
+            app:cardBackgroundColor="@color/CardBackground"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
@@ -176,7 +167,7 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             android:onClick="GoToInternationalFlightDetail"
-            app:cardBackgroundColor="@color/Background"
+            app:cardBackgroundColor="@color/CardBackground"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 

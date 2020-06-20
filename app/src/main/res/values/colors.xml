@@ -3,5 +3,7 @@
     <color name="colorPrimary">#2D383F</color>
     <color name="colorPrimaryDark">#2D383f</color>
     <color name="colorAccent">#FF781F</color>
-    <color name="Background">#EEEDEF</color>
+    <color name="Background">#FBEAEB</color>
+    <color name="CardBackground">#F8DFE0</color>
+
 </resources>

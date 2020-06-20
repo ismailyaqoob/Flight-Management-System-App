@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EnquiryActivity"
-    android:background="@drawable/background">
+    android:background="@color/Background">
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:rowCount="2"
         android:columnCount="1"
-        android:layout_margin="20dp">
+        android:layout_margin="20sp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             android:onClick="GoToLocal"
-            app:cardBackgroundColor="@color/Background"
+            app:cardBackgroundColor="@color/CardBackground"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
@@ -65,7 +65,7 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             android:onClick="GoToInternational"
-            app:cardBackgroundColor="@color/Background"
+            app:cardBackgroundColor="@color/CardBackground"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
