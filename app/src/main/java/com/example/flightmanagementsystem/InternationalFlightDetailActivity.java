@@ -14,6 +14,7 @@ public class InternationalFlightDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_international_flight_detail);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent data=getIntent();
         countryname=data.getStringExtra("CountryName");

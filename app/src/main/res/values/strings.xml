@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Flight Management System</string>
+    <string name="app_name">AIR-US</string>
     <string name="K_FPW">2</string>
     <string name="K_D">Monday and Saturday</string>
     <string name="K_T">09:30AM</string>

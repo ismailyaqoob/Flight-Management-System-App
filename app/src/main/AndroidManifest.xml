@@ -9,18 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".infoActivity"></activity>
-        <activity android:name=".RatingActivity" />
-        <activity android:name=".TicketDetailActivity" />
-        <activity android:name=".ViewCancelActivity" />
-        <activity android:name=".BookingActivity" />
-        <activity android:name=".InternationalFlightDetailActivity" />
-        <activity android:name=".InternationalActivity" />
-        <activity android:name=".LocalFlightDetailActivity" />
-        <activity android:name=".LocalActivity" />
-        <activity android:name=".EnquiryActivity" />
-        <activity android:name=".ActivityHome" />
-        <activity android:name=".SignupActivity" />
+        <activity android:name=".infoActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".RatingActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".TicketDetailActivity"
+            android:parentActivityName=".ViewCancelActivity"/>
+        <activity android:name=".ViewCancelActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".BookingActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".InternationalFlightDetailActivity"
+            android:parentActivityName=".InternationalActivity"/>
+        <activity android:name=".InternationalActivity"
+            android:parentActivityName=".EnquiryActivity"/>
+        <activity android:name=".LocalFlightDetailActivity"
+            android:parentActivityName=".LocalActivity"/>
+        <activity android:name=".LocalActivity"
+            android:parentActivityName=".EnquiryActivity"/>
+        <activity android:name=".EnquiryActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ActivityHome"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".SignupActivity"
+            android:parentActivityName=".LoginActivity"/>
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +40,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:parentActivityName=".LoginActivity"/>
     </application>
 
 </manifest>

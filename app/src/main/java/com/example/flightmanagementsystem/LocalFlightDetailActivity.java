@@ -15,6 +15,7 @@ public class LocalFlightDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_local_flight_detail);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent data=getIntent();
         cityname=data.getStringExtra("CityName");

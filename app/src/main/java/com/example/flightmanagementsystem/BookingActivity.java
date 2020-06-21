@@ -35,6 +35,7 @@ public class BookingActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent data = getIntent();
         User_ID = data.getIntExtra("userid", 0);

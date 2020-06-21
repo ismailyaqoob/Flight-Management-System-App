@@ -14,7 +14,7 @@ public class RatingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rating);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void RateApp(View v){

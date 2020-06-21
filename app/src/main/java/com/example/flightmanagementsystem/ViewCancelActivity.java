@@ -21,6 +21,7 @@ public class ViewCancelActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_cancel);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent data=getIntent();
         user_id=data.getIntExtra("userid",0);

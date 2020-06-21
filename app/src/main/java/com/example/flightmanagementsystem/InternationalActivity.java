@@ -12,6 +12,7 @@ public class InternationalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_international);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void GoToInternationalFlightDetail(View v){

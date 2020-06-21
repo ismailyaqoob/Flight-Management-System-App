@@ -13,6 +13,7 @@ public class LocalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_local);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void GoToLocalFlightDetail(View v) {
