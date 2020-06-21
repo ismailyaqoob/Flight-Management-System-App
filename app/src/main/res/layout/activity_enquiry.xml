@@ -48,7 +48,8 @@
                     android:layout_gravity="center_horizontal"
                     android:text="LOCAL"
                     android:textStyle="bold"
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:textColor="@color/TextDark"/>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -87,7 +88,8 @@
                     android:layout_gravity="center_horizontal"
                     android:text="INTERNATIONAL"
                     android:textStyle="bold"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textColor="@color/TextDark"/>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>

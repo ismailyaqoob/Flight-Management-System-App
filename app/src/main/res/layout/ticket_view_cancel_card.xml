@@ -25,7 +25,8 @@
             android:padding="10dp"
             android:text="Ticket Number"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/TextDark"/>
 
         <ImageButton
             android:id="@+id/button_VC_deletebutton"
@@ -33,7 +34,7 @@
             android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:background="@drawable/button_rounded"
-            android:src="@drawable/round_delete_white_18"
+            android:src="@drawable/cross"
             android:layout_centerVertical="true"
             android:layout_margin="5dp"
             android:clickable="true"

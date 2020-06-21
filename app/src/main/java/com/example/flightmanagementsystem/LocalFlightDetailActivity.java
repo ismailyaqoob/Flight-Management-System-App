@@ -39,7 +39,7 @@ public class LocalFlightDetailActivity extends AppCompatActivity {
         String heading, flightsperweek, days,timing,onewaypec,onewayec,onewaybc,onewayfc,returnpec,returnec,returnbc,returnfc;
 
         if(cityname.equals("Faisalabad")){
-            cityimage.setImageResource(R.drawable.karachi);
+            cityimage.setImageResource(R.drawable.faisalabad);
             heading="Flight to "+ cityname;
             flightsperweek="Flights per Week: "+getString(R.string.F_FPW);
             days="Day: "+getString(R.string.F_D);
@@ -54,7 +54,7 @@ public class LocalFlightDetailActivity extends AppCompatActivity {
             returnfc=getString(R.string.F_FC_R);
         }
         else if(cityname.equals("Islamabad")){
-            cityimage.setImageResource(R.drawable.karachi);
+            cityimage.setImageResource(R.drawable.islamabad);
             heading="Flight to "+ cityname;
             flightsperweek="Flights per Week: "+getString(R.string.I_FPW);
             days="Days: "+getString(R.string.I_D);
@@ -84,7 +84,7 @@ public class LocalFlightDetailActivity extends AppCompatActivity {
             returnfc=getString(R.string.K_FC_R);
         }
         else if(cityname.equals("Lahore")){
-            cityimage.setImageResource(R.drawable.karachi);
+            cityimage.setImageResource(R.drawable.lahore);
             heading="Flight to "+ cityname;
             flightsperweek="Flights per Week: "+getString(R.string.L_FPW);
             days="Day: "+getString(R.string.L_D);
@@ -99,7 +99,7 @@ public class LocalFlightDetailActivity extends AppCompatActivity {
             returnfc=getString(R.string.L_FC_R);
         }
         else if(cityname.equals("Peshawar")){
-            cityimage.setImageResource(R.drawable.karachi);
+            cityimage.setImageResource(R.drawable.peshawar);
             heading="Flight to "+ cityname;
             flightsperweek="Flights per Week: "+getString(R.string.P_FPW);
             days="Day: "+getString(R.string.P_D);

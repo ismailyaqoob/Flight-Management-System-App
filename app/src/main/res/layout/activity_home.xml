@@ -46,7 +46,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_paragraph2"
+                android:text="@string/home_paragraph3"
                 android:textSize="20dp"
                 android:gravity="center"
                 android:layout_marginBottom="5dp"/>
@@ -54,7 +54,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_paragraph2"
+                android:text="@string/home_paragraph4"
                 android:textSize="20dp"
                 android:gravity="center"
                 android:layout_marginBottom="5dp"/>
@@ -62,7 +62,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_paragraph2"
+                android:text="@string/home_paragraph5"
                 android:textSize="20dp"
                 android:gravity="center"
                 android:layout_marginBottom="5dp"/>
@@ -70,10 +70,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_paragraph2"
+                android:text="@string/home_paragraph6"
                 android:textSize="20dp"
                 android:gravity="center"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="30dp"/>
 
 
         </LinearLayout>

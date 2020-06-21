@@ -38,7 +38,7 @@ public class InternationalFlightDetailActivity extends AppCompatActivity {
         String heading, flightsperweek, days,timing,onewaypec,onewayec,onewaybc,onewayfc,returnpec,returnec,returnbc,returnfc;
 
         if(countryname.equals("America")){
-            countryimage.setImageResource(R.drawable.karachi);
+            countryimage.setImageResource(R.drawable.america);
             heading="Flight to "+ countryname;
             flightsperweek="Flights per Week: "+getString(R.string.IA_FPW);
             days="Day: "+getString(R.string.IA_D);
@@ -53,7 +53,7 @@ public class InternationalFlightDetailActivity extends AppCompatActivity {
             returnfc=getString(R.string.IA_FC_R);
         }
         else if(countryname.equals("China")){
-            countryimage.setImageResource(R.drawable.karachi);
+            countryimage.setImageResource(R.drawable.china);
             heading="Flight to "+ countryname;
             flightsperweek="Flights per Week: "+getString(R.string.IC_FPW);
             days="Day: "+getString(R.string.IC_D);
@@ -68,7 +68,7 @@ public class InternationalFlightDetailActivity extends AppCompatActivity {
             returnfc=getString(R.string.IC_FC_R);
         }
         else if(countryname.equals("Dubai")){
-            countryimage.setImageResource(R.drawable.karachi);
+            countryimage.setImageResource(R.drawable.dubai);
             heading="Flight to "+ countryname;
             flightsperweek="Flights per Week: "+getString(R.string.ID_FPW);
             days="Day: "+getString(R.string.ID_D);
@@ -83,7 +83,7 @@ public class InternationalFlightDetailActivity extends AppCompatActivity {
             returnfc=getString(R.string.ID_FC_R);
         }
         else if(countryname.equals("London")){
-            countryimage.setImageResource(R.drawable.karachi);
+            countryimage.setImageResource(R.drawable.london);
             heading="Flight to "+ countryname;
             flightsperweek="Flights per Week: "+getString(R.string.IL_FPW);
             days="Day: "+getString(R.string.IL_D);
@@ -98,7 +98,7 @@ public class InternationalFlightDetailActivity extends AppCompatActivity {
             returnfc=getString(R.string.IL_FC_R);
         }
         else if(countryname.equals("Saudi Arabia")){
-            countryimage.setImageResource(R.drawable.karachi);
+            countryimage.setImageResource(R.drawable.saudiarabia);
             heading="Flight to "+ countryname;
             flightsperweek="Flights per Week: "+getString(R.string.ISA_FPW);
             days="Day: "+getString(R.string.ISA_D);

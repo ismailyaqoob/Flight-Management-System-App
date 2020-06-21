@@ -22,7 +22,7 @@
         android:background="@drawable/button_rounded"
         android:layout_marginTop="30dp"
         android:text="Rate"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/TextLight"
         android:textStyle="bold"
         android:textSize="22sp"
         android:layout_below="@+id/ratingBar"

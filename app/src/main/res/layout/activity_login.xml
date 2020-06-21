@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     android:background="@color/Background"
     android:orientation="vertical"
-    android:padding="30dp"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:padding="20sp">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:padding="50dp"
-        android:src="@drawable/loginicon" />
+        android:src="@drawable/login" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -56,8 +56,8 @@
         android:background="@drawable/button_rounded"
         android:onClick="LoginUser"
         android:text="Login"
-        android:textColor="#FFFFFF"
-        android:textSize="22sp"/>
+        android:textColor="@color/TextLight"
+        android:textSize="22sp" />
 
     <Button
         android:layout_width="match_parent"
@@ -66,6 +66,6 @@
         android:background="@drawable/button_rounded"
         android:onClick="GoToSignup"
         android:text="Register"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/TextLight"
         android:textSize="22sp" />
 </LinearLayout>
