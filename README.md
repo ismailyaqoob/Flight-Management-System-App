@@ -13,5 +13,10 @@ The application contain following features:
 * User can check application info.
 
 ## Technology
-* The project is built on **Android Studio**
-* Programming Language **Java**
+* The project is built on **Android Studio**.
+* Programming Language **Java**.
+
+## Credits
+**[Muhammad Sabih Mohsin](https://github.com/sabihmohsin)**
+Theme color selection.
+
