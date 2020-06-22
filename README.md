@@ -18,5 +18,9 @@ The application contain following features:
 
 ## Credits
 **[Muhammad Sabih Mohsin](https://github.com/sabihmohsin)**
-Theme color selection.
+* Theme color selection.
+
+<image src="Images/AppPoster.png"/>
+
+***For .apk file [click here](https://github.com/ismailyaqoob/Flight-Management-System-App/tree/master/apk%20file)***
 
