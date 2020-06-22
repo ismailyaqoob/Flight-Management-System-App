@@ -17,9 +17,9 @@ public class RatingActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-    public void RateApp(View v){
+    public void RateApp(View v) {
 
-        RatingBar ratingbar=(RatingBar) findViewById(R.id.ratingBar);
-        Toast.makeText(this,"Your rating: "+ ratingbar.getRating(),Toast.LENGTH_LONG).show();
+        RatingBar ratingbar = (RatingBar) findViewById(R.id.ratingBar);
+        Toast.makeText(this, "Your rating: " + ratingbar.getRating(), Toast.LENGTH_LONG).show();
     }
 }

@@ -8,7 +8,8 @@ import android.os.Handler;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
-    private static int SplashTimeOut=2000;
+    private static int SplashTimeOut = 2000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,11 +18,11 @@ public class SplashScreenActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent login=new Intent();
-                login.setClass(getApplicationContext(),LoginActivity.class);
+                Intent login = new Intent();
+                login.setClass(getApplicationContext(), LoginActivity.class);
                 startActivity(login);
                 finish();
             }
-        },SplashTimeOut);
+        }, SplashTimeOut);
     }
 }

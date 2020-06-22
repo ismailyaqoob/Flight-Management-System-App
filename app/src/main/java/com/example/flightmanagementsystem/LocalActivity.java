@@ -18,25 +18,21 @@ public class LocalActivity extends AppCompatActivity {
 
     public void GoToLocalFlightDetail(View v) {
         int cardid = v.getId();
-        String name="";
-        if(cardid==R.id.card_faisalabad){
-            name="Faisalabad";
-        }
-        else if(cardid==R.id.card_islamabad){
-            name="Islamabad";
-        }
-        else if(cardid==R.id.card_karachi){
-            name="Karachi";
-        }
-        else if(cardid==R.id.card_lahore){
-            name="Lahore";
-        }
-        else if(cardid==R.id.card_peshawar){
-            name="Peshawar";
+        String name = "";
+        if (cardid == R.id.card_faisalabad) {
+            name = "Faisalabad";
+        } else if (cardid == R.id.card_islamabad) {
+            name = "Islamabad";
+        } else if (cardid == R.id.card_karachi) {
+            name = "Karachi";
+        } else if (cardid == R.id.card_lahore) {
+            name = "Lahore";
+        } else if (cardid == R.id.card_peshawar) {
+            name = "Peshawar";
         }
         Intent localdetail = new Intent();
         localdetail.setClass(this, LocalFlightDetailActivity.class);
-        localdetail.putExtra("CityName",name);
+        localdetail.putExtra("CityName", name);
         startActivity(localdetail);
     }
 }

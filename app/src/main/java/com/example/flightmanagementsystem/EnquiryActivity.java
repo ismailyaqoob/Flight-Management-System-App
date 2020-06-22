@@ -14,14 +14,14 @@ public class EnquiryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_enquiry);
     }
 
-    public void GoToLocal(View v){
-        Intent local =new Intent();
+    public void GoToLocal(View v) {
+        Intent local = new Intent();
         local.setClass(this, LocalActivity.class);
         startActivity(local);
     }
 
-    public void GoToInternational(View v){
-        Intent international =new Intent();
+    public void GoToInternational(View v) {
+        Intent international = new Intent();
         international.setClass(this, InternationalActivity.class);
         startActivity(international);
     }

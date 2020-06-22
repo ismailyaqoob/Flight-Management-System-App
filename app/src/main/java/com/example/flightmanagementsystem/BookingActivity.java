@@ -200,7 +200,7 @@ public class BookingActivity extends AppCompatActivity {
         if (!destination.equals("America") && !destination.equals("China") && !destination.equals("Dubai") && !destination.equals("London")
                 && !destination.equals("Saudi Arabia") && !destination.equals("Faisalabad") && !destination.equals("Islamabad")
                 && !destination.equals("Karachi") && !destination.equals("Lahore") && !destination.equals("Peshawar")) {
-            Toast.makeText(this, "Please select valid destination. =>"+destination, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please select valid destination. =>" + destination, Toast.LENGTH_LONG).show();
             return;
         }
         if (!cabinclass.equals("Premium Economy Class") && !cabinclass.equals("Economy Class") && !cabinclass.equals("Business Class") && !cabinclass.equals("First Class")) {
@@ -210,22 +210,22 @@ public class BookingActivity extends AppCompatActivity {
 
         Database helper = new Database(this);
         SQLiteDatabase db = helper.getWritableDatabase();
-        ContentValues values=new ContentValues();
-        values.put("FULLNAME",fullname);
-        values.put("ADDRESS",address);
-        values.put("MOBILENUMBER",mobilenumber);
-        values.put("NIC",NICnumber);
-        values.put("PASSPORT",passportnumber);
-        values.put("ORIGIN",origin);
-        values.put("DESTINATION",destination);
-        values.put("CABINCLASS",cabinclass);
-        values.put("TICKETTYPE",tickettype);
-        values.put("USERID",User_ID);
-        long id=db.insert("TICKETDETAIL",null,values);
-        String ticketnumber=destination.substring(0,3).toUpperCase()+"-"+id;
-        values.put("TICKETNUMBER",ticketnumber);
-        db.update("TICKETDETAIL",values,"_id="+id,null);
-        Toast.makeText(this,"Your ticket has been booked successfully, go and check details.",Toast.LENGTH_LONG).show();
+        ContentValues values = new ContentValues();
+        values.put("FULLNAME", fullname);
+        values.put("ADDRESS", address);
+        values.put("MOBILENUMBER", mobilenumber);
+        values.put("NIC", NICnumber);
+        values.put("PASSPORT", passportnumber);
+        values.put("ORIGIN", origin);
+        values.put("DESTINATION", destination);
+        values.put("CABINCLASS", cabinclass);
+        values.put("TICKETTYPE", tickettype);
+        values.put("USERID", User_ID);
+        long id = db.insert("TICKETDETAIL", null, values);
+        String ticketnumber = destination.substring(0, 3).toUpperCase() + "-" + id;
+        values.put("TICKETNUMBER", ticketnumber);
+        db.update("TICKETDETAIL", values, "_id=" + id, null);
+        Toast.makeText(this, "Your ticket has been booked successfully, go and check details.", Toast.LENGTH_LONG).show();
         originauto.setText("");
         destinationIauto.setText("");
         destinationLauto.setText("");

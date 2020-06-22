@@ -73,7 +73,7 @@ public class SignupActivity extends AppCompatActivity {
         Database helper = new Database(this);
         SQLiteDatabase db = helper.getWritableDatabase();
 
-        String query="SELECT * FROM USER WHERE EMAIL =\'" + email+"\'";
+        String query = "SELECT * FROM USER WHERE EMAIL =\'" + email + "\'";
         Cursor cursor = db.rawQuery(query, new String[]{});
         if (cursor.getCount() > 0) {
             Toast.makeText(this, "Email already exist please change your email address.", Toast.LENGTH_LONG).show();
