@@ -40,16 +40,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/home" />
+                    android:src="@drawable/local" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="LOCAL"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:textColor="@color/TextDark"/>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -80,16 +72,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/home"/>
+                    android:src="@drawable/internatrional"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="INTERNATIONAL"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:textColor="@color/TextDark"/>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
