@@ -16,7 +16,6 @@ public class LocalFlightDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_local_flight_detail);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //Created intent to get data from parent activity
         Intent data = getIntent();

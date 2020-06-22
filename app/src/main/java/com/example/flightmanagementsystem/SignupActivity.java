@@ -18,7 +18,6 @@ public class SignupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void RegisterUser(View v) {

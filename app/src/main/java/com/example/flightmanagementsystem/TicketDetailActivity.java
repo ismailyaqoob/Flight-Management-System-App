@@ -12,7 +12,6 @@ public class TicketDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ticket_detail);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         TextView ticketnumbertext, fullnametext, addresstext, mobilenumbertext, NICnumbertext, passportnumbertext, origintext, destinationtext, cabinclasstext, tickettypetext;
 
