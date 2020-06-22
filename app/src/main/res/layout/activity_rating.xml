@@ -4,28 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RatingActivity"
-    android:background="@color/Background">
+    android:background="@color/Background"
+    tools:context=".RatingActivity">
 
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:progressTint="@color/colorAccent"
         tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="238dp"
-        android:progressTint="@color/colorAccent"/>
+        tools:layout_editor_absoluteY="238dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_rounded"
-        android:layout_marginTop="30dp"
-        android:text="Rate"
-        android:textColor="@color/TextLight"
-        android:textStyle="bold"
-        android:textSize="22sp"
         android:layout_below="@+id/ratingBar"
         android:layout_centerHorizontal="true"
-        android:onClick="RateApp"/>
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="RateApp"
+        android:text="Rate"
+        android:textColor="@color/TextLight"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 </RelativeLayout>

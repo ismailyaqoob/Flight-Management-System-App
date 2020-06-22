@@ -4,81 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityHome"
-    android:background="@color/Background">
+    android:background="@color/Background"
+    tools:context=".ActivityHome">
 
     <ImageView
 
+        android:id="@+id/homegif"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@drawable/flight"
-        android:id="@+id/homegif"/>
-    
+        android:src="@drawable/flight" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/homegif"
         android:layout_marginBottom="10dp">
-        
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="20sp">
+            android:layout_margin="20sp"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
                 android:text="@string/home_paragraph1"
-                android:textSize="20dp"
-                android:gravity="center"
-                android:layout_marginBottom="5dp"/>
+                android:textSize="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
                 android:text="@string/home_paragraph2"
-                android:textSize="20dp"
-                android:gravity="center"
-                android:layout_marginBottom="5dp"/>
+                android:textSize="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
                 android:text="@string/home_paragraph3"
-                android:textSize="20dp"
-                android:gravity="center"
-                android:layout_marginBottom="5dp"/>
+                android:textSize="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
                 android:text="@string/home_paragraph4"
-                android:textSize="20dp"
-                android:gravity="center"
-                android:layout_marginBottom="5dp"/>
+                android:textSize="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
                 android:text="@string/home_paragraph5"
-                android:textSize="20dp"
-                android:gravity="center"
-                android:layout_marginBottom="5dp"/>
+                android:textSize="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/home_paragraph6"
-                android:textSize="20dp"
+                android:layout_marginBottom="30dp"
                 android:gravity="center"
-                android:layout_marginBottom="30dp"/>
+                android:text="@string/home_paragraph6"
+                android:textSize="20dp" />
 
 
         </LinearLayout>
     </ScrollView>
-    
-
 
 </RelativeLayout>

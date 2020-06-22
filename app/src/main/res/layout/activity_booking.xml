@@ -4,22 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
     android:background="@color/Background"
-    tools:context=".BookingActivity"
-    android:layout_marginBottom="10dp">
+    tools:context=".BookingActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="20sp">
+        android:layout_margin="20sp"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:text="Personal Details"
-            android:textSize="30dp"
-            android:layout_marginBottom="5dp"/>
+            android:textSize="30dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -69,8 +69,8 @@
                 android:ems="10"
                 android:hint="Mobile Number"
                 android:inputType="phone"
-                android:textSize="20sp"
-                android:maxLength="11"/>
+                android:maxLength="11"
+                android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -87,8 +87,8 @@
                 android:ems="10"
                 android:hint="NIC Number"
                 android:inputType="number"
-                android:textSize="20sp"
-                android:maxLength="13"/>
+                android:maxLength="13"
+                android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -112,9 +112,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
             android:text="Flight Details"
-            android:textSize="30dp"
-            android:layout_marginBottom="5dp"/>
+            android:textSize="30dp" />
 
         <RadioGroup
             android:id="@+id/radiogroup_destination"
@@ -125,9 +125,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Destination: "
-                android:textSize="20sp"
-                android:layout_marginTop="5dp"/>
+                android:textSize="20sp" />
 
             <RadioButton
                 android:id="@+id/radiobutton_local"
@@ -155,11 +155,11 @@
 
             <AutoCompleteTextView
                 android:id="@+id/autoComplete_origin"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
                 android:hint="Origin"
-                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+                android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -171,12 +171,12 @@
 
             <AutoCompleteTextView
                 android:id="@+id/autoComplete_Ldestination"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:hint="Destination (Local)"
                 android:enabled="false"
-                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+                android:hint="Destination (Local)"
+                android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -188,12 +188,12 @@
 
             <AutoCompleteTextView
                 android:id="@+id/autoComplete_Idestination"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:hint="Destination (International)"
                 android:enabled="false"
-                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+                android:hint="Destination (International)"
+                android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -205,11 +205,11 @@
 
             <AutoCompleteTextView
                 android:id="@+id/autoComplete_cabinclass"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
                 android:hint="Class"
-                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+                android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <RadioGroup
@@ -220,9 +220,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Ticket Type: "
-                android:textSize="20sp"
-                android:layout_marginTop="5dp"/>
+                android:textSize="20sp" />
 
             <RadioButton
                 android:id="@+id/radiobutton_oneway"
@@ -245,13 +245,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
             android:background="@drawable/button_rounded"
+            android:onClick="BookTicket"
             android:text="Book Ticket"
-            android:textStyle="bold"
             android:textColor="@color/TextLight"
             android:textSize="22sp"
-            android:onClick="BookTicket"
-            android:layout_marginBottom="30dp"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 </ScrollView>
