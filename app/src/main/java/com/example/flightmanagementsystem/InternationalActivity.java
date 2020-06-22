@@ -12,12 +12,13 @@ public class InternationalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_international);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void GoToInternationalFlightDetail(View v) {
         int cardid = v.getId();
         String name = "";
+
+        //Checking which button is clicked
         if (cardid == R.id.card_america) {
             name = "America";
         } else if (cardid == R.id.card_china) {

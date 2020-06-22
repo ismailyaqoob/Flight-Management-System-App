@@ -24,9 +24,11 @@ public class ViewCancelActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_cancel);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        //Created intent to get data from parent activity
         Intent data = getIntent();
         user_id = data.getIntExtra("userid", 0);
 
+        //Working on database
         Database helper = new Database(this);
         SQLiteDatabase db = helper.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM TICKETDETAIL WHERE USERID=\'" + user_id + "\'", null);

@@ -16,6 +16,7 @@ public class TicketDetailActivity extends AppCompatActivity {
 
         TextView ticketnumbertext, fullnametext, addresstext, mobilenumbertext, NICnumbertext, passportnumbertext, origintext, destinationtext, cabinclasstext, tickettypetext;
 
+        //Created intent to get data from parent activity
         Intent data = getIntent();
 
         ticketnumbertext = (TextView) findViewById(R.id.textView_TDticketnumber);
@@ -29,6 +30,7 @@ public class TicketDetailActivity extends AppCompatActivity {
         cabinclasstext = (TextView) findViewById(R.id.textView_TDcabinclass);
         tickettypetext = (TextView) findViewById(R.id.textView_TDtickettype);
 
+        //Setting data to the view
         ticketnumbertext.setText(data.getStringExtra("ticketnumber"));
         fullnametext.setText("Full Name: " + data.getStringExtra("fullname"));
         addresstext.setText("Address: " + data.getStringExtra("address"));

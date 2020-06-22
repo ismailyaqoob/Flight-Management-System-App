@@ -15,8 +15,8 @@ public class InternationalFlightDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_international_flight_detail);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        //Created intent to get data from parent activity
         Intent data = getIntent();
         countryname = data.getStringExtra("CountryName");
 
@@ -39,6 +39,7 @@ public class InternationalFlightDetailActivity extends AppCompatActivity {
 
         String heading, flightsperweek, days, timing, onewaypec, onewayec, onewaybc, onewayfc, returnpec, returnec, returnbc, returnfc;
 
+        //Setting activity content
         if (countryname.equals("America")) {
             countryimage.setImageResource(R.drawable.america);
             heading = "Flight to " + countryname;

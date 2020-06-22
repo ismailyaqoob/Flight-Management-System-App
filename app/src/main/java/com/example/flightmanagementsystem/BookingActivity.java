@@ -35,19 +35,19 @@ public class BookingActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        //Created intent to get data from parent activity
         Intent data = getIntent();
         User_ID = data.getIntExtra("userid", 0);
 
-        //Initializing Views.
+        //Initializing Views
         originauto = (AutoCompleteTextView) findViewById(R.id.autoComplete_origin);
         destinationLauto = (AutoCompleteTextView) findViewById(R.id.autoComplete_Ldestination);
         destinationIauto = (AutoCompleteTextView) findViewById(R.id.autoComplete_Idestination);
         cabinclassauto = (AutoCompleteTextView) findViewById(R.id.autoComplete_cabinclass);
         destinationradio = (RadioGroup) findViewById(R.id.radiogroup_destination);
 
-
+        //Assign adapter to the the Autofills
         originadapter = ArrayAdapter.createFromResource(this, R.array.orign, R.layout.support_simple_spinner_dropdown_item);
         originauto.setAdapter(originadapter);
 
@@ -60,11 +60,13 @@ public class BookingActivity extends AppCompatActivity {
         destinationIadapter = ArrayAdapter.createFromResource(this, R.array.I_destination, R.layout.support_simple_spinner_dropdown_item);
         destinationIauto.setAdapter(destinationIadapter);
 
+        //Disabled soft keyboard input on Autofills
         originauto.setInputType(InputType.TYPE_NULL);
         cabinclassauto.setInputType(InputType.TYPE_NULL);
         destinationLauto.setInputType(InputType.TYPE_NULL);
         destinationIauto.setInputType(InputType.TYPE_NULL);
 
+        //Enabled and disabled Autofills according to the selection of destination
         destinationradio.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -86,6 +88,7 @@ public class BookingActivity extends AppCompatActivity {
             }
         });
 
+        //Showed drop down on auto fill click
         originauto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -129,6 +132,7 @@ public class BookingActivity extends AppCompatActivity {
 
         String fullname, address, mobilenumber, NICnumber, passportnumber, origin, destination = "", cabinclass, tickettype = "";
 
+        //Getting data of the views
         fullname = fullnametext.getText().toString();
         address = addresstext.getText().toString();
         mobilenumber = mobilenumbertext.getText().toString();
@@ -137,6 +141,7 @@ public class BookingActivity extends AppCompatActivity {
         origin = originauto.getText().toString();
         cabinclass = cabinclassauto.getText().toString();
 
+        //Checking whether the views are null or not
         if (fullname.equals("")) {
             Toast.makeText(this, "Please enter full name.", Toast.LENGTH_LONG).show();
             return;
@@ -161,6 +166,7 @@ public class BookingActivity extends AppCompatActivity {
             Toast.makeText(this, "Please choose destination type.", Toast.LENGTH_LONG).show();
             return;
         } else {
+            //Getting data of the Autofill views
             if (localradioB.isChecked()) {
                 destination = destinationLauto.getText().toString();
             } else if (internationalradioB.isChecked()) {
@@ -183,31 +189,41 @@ public class BookingActivity extends AppCompatActivity {
             Toast.makeText(this, "Please choose ticket type.", Toast.LENGTH_LONG).show();
             return;
         } else {
+            //Getting data of the checked radio button
             if (onewayradioB.isChecked()) {
                 tickettype = onewayradioB.getText().toString();
             } else if (returnradioB.isChecked()) {
                 tickettype = returnradioB.getText().toString();
             }
         }
+
+        //Checking whether user selected same destination and origin
         if (destination.equals(origin)) {
             Toast.makeText(this, "Origin and destination cannot be same.", Toast.LENGTH_LONG).show();
             return;
         }
+
+        //Checking weather user have entered data in the origin Autofill using external keyboard.
         if (!origin.equals("Faisalabad") && !origin.equals("Islamabad") && !origin.equals("Karachi") && !origin.equals("Lahore") && !origin.equals("Peshawar")) {
             Toast.makeText(this, "Please select valid origin.", Toast.LENGTH_LONG).show();
             return;
         }
+
+        //Checking weather user have entered data in the destination Autofill using external keyboard.
         if (!destination.equals("America") && !destination.equals("China") && !destination.equals("Dubai") && !destination.equals("London")
                 && !destination.equals("Saudi Arabia") && !destination.equals("Faisalabad") && !destination.equals("Islamabad")
                 && !destination.equals("Karachi") && !destination.equals("Lahore") && !destination.equals("Peshawar")) {
             Toast.makeText(this, "Please select valid destination. =>" + destination, Toast.LENGTH_LONG).show();
             return;
         }
+
+        //Checking weather user have entered data in the cabin class Autofill using external keyboard.
         if (!cabinclass.equals("Premium Economy Class") && !cabinclass.equals("Economy Class") && !cabinclass.equals("Business Class") && !cabinclass.equals("First Class")) {
             Toast.makeText(this, "Please select valid cabin class.", Toast.LENGTH_LONG).show();
             return;
         }
 
+        //Working on database
         Database helper = new Database(this);
         SQLiteDatabase db = helper.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -226,6 +242,8 @@ public class BookingActivity extends AppCompatActivity {
         values.put("TICKETNUMBER", ticketnumber);
         db.update("TICKETDETAIL", values, "_id=" + id, null);
         Toast.makeText(this, "Your ticket has been booked successfully, go and check details.", Toast.LENGTH_LONG).show();
+
+        //Setting input text boxes to null and radio buttons to false.
         originauto.setText("");
         destinationIauto.setText("");
         destinationLauto.setText("");

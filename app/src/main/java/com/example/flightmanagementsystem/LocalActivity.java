@@ -19,6 +19,8 @@ public class LocalActivity extends AppCompatActivity {
     public void GoToLocalFlightDetail(View v) {
         int cardid = v.getId();
         String name = "";
+
+        //Checking which button is clicked
         if (cardid == R.id.card_faisalabad) {
             name = "Faisalabad";
         } else if (cardid == R.id.card_islamabad) {

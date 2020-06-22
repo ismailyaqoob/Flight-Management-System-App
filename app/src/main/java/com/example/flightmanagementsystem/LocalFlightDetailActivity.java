@@ -18,6 +18,7 @@ public class LocalFlightDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_local_flight_detail);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        //Created intent to get data from parent activity
         Intent data = getIntent();
         cityname = data.getStringExtra("CityName");
 
@@ -40,6 +41,7 @@ public class LocalFlightDetailActivity extends AppCompatActivity {
 
         String heading, flightsperweek, days, timing, onewaypec, onewayec, onewaybc, onewayfc, returnpec, returnec, returnbc, returnfc;
 
+        //Setting activity content
         if (cityname.equals("Faisalabad")) {
             cityimage.setImageResource(R.drawable.faisalabad);
             heading = "Flight to " + cityname;

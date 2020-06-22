@@ -22,11 +22,11 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     public void RegisterUser(View v) {
-        //declaring views
+        //Declaring views
         EditText fullnametext, emailtext, passwordtext, confirmpasswordtext;
         RadioButton maleradio, femaleradio;
 
-        //initiallizing views
+        //Initializing views
         fullnametext = (EditText) findViewById(R.id.edittext_S_fullname);
         emailtext = (EditText) findViewById(R.id.edittext_S_email);
         passwordtext = (EditText) findViewById(R.id.edittext_S_password);
@@ -35,11 +35,14 @@ public class SignupActivity extends AppCompatActivity {
         femaleradio = (RadioButton) findViewById(R.id.radiobutton_S_female);
 
         String fullname, email, password, confirmpassword, gender = "";
+
+        //Getting data from the views
         fullname = fullnametext.getText().toString();
         email = emailtext.getText().toString();
         password = passwordtext.getText().toString();
         confirmpassword = confirmpasswordtext.getText().toString();
 
+        //Checking whether there is null field in the submitted form
         if (fullname.equals("")) {
             Toast.makeText(this, "Please enter full name.", Toast.LENGTH_LONG).show();
             return;
@@ -64,12 +67,14 @@ public class SignupActivity extends AppCompatActivity {
             Toast.makeText(this, "Password and Confirm password are not same.", Toast.LENGTH_LONG).show();
             return;
         }
+        //Checking which radio button is clicked
         if (maleradio.isChecked()) {
             gender = "Male";
         } else {
             gender = "Female";
         }
 
+        //Working on database
         Database helper = new Database(this);
         SQLiteDatabase db = helper.getWritableDatabase();
 
