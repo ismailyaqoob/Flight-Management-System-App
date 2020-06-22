@@ -1,5 +1,5 @@
 # Flight-Management-System-App
-The project contain the basic implementation of website based on Ecommerce buying and selling.
+The project contain the basic implementation of flight ticket reservation.
 
 ## Features
 The application contain following features:
